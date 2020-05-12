@@ -16,12 +16,10 @@ function askQuestion(question){
 
 
 async function Program(){
-    let students = ["Christine", "Dave", "Haley"];
+    let students = [];
 
-    let userInput1 = await askQuestion ("Please Enter Your name ");
-    let nameInput = parseInt(userInput1);
-
-    students.push(nameInput);
+    let userInput = await askQuestion ("Please Enter Your name ");
+     students.push(userInput);
 
     
                      
