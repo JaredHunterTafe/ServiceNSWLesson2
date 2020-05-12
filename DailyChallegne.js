@@ -17,34 +17,19 @@ function askQuestion(question){
 
 async function Program(){
 
-    let numberName1 = await askQuestion ("Please Enter a Number 1-5");
+let myArray = [];
+while(true) {
+    let userInput = await askQuestion("input a number between 1 and 5 ");
+    for(let i= 0; i < myArray.length; i++)
+        if(myarray[i] == userInput){
+            break;
+                }
 
-    let number1 = parseInt(numberName1);
-
-if  != numbers
-
-let numberName2 = await askQuestion ("Please Enter a Number 1-5");
-
-let number2 = parseInt(numberName2);
-
-else 
-
-
-    {console.log(numbers[i]);
-    }
-
-
-
-numbers.push(number1);
-
-
-
-console.log (numbers)
-
-
-
-  }
-
+myArray.push(userInput);
+    
+console.log(myArray);
+}
+}
 
 Program().then(() => {
     process.exit(0);
